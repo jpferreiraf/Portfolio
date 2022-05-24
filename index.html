@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projetos</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+               // Adiciona rolagem suave a todos os links
+          $("a").on('click', function(event) {
+        
+                   // Certifique-se de que this.hash tenha um valor antes de substituir o comportamento padrão
+            if (this.hash !== "") {
+                    // Impede o comportamento de clique de âncora padrão
+              event.preventDefault();
+        
+                       // MINHA VARIAVEL 
+              var hash = this.hash;
+        
+                  // JQUERY - ROLAGEM 
+                 // 800 MILISEGUNDOS
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // FINAL DO EFEITO
+                window.location.hash = hash;
+              });
+            } // FINAL DA MINHA CHAVE
+          });
+        });
+    </script>
+       
+        <script>
+             // BACkGROUND DO VIDEO
+            // Get the video
+            var video = document.getElementById("myVideo");
+
+            // Get the button
+            var btn = document.getElementById("myBtn");
+
+            // Pause and play the video, and change the button text
+            function myFunction() {
+            if (video.paused) {
+              video.play();
+              btn.innerHTML = "Pause";
+             } else {
+             video.pause();
+                btn.innerHTML = "Play";
+     }
+}
+</script>
+        
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <main>
+             <video autoplay muted loop id="myVideo">
+                <source src="matrix.mp4" type="video/mp4">
+              </video>
+
+                <section class="hero">
+                  <div class="container">
+                     <div class="hero-inner">
+					    	<div class="hero-copy">
+	                           <h1 class="hero-title mt-0">Bem-vindo(a)</h1>
+	                            <p class="hero-paragraph">Logo abaixo alguns dos meus projetos fique a vontade.</p>
+	                              <div class="hero-cta"><a class="button button-primary" href="#proj">Quero ver</a><a class="button" href="https://github.com/jpfflorencio">GitHub</a></div>
+					    	        </div>
+						    <div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+		
+						</div>
+                    </div>
+                </div>
+            </section>
+                <br>
+                <br>
+                <br>
+            <section class="sessao" id="proj">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="https://lsw-fast.lenovo.com.cn/appstore/normal/apps/7316-2022-03-28053329-1648460009371.gif" width="100" height="100" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Aplicativos</h4>
+                                    <p class="text-sm mb-0">Texto descritivo.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="https://www.emojiall.com/images/animations/joypixels/128px/robot.gif" width="100" height="100" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Jogos</h4>
+                                    <p class="text-sm mb-0">Texto descritivo.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="https://uploads-ssl.webflow.com/5e7b99a162211f50391ae211/61ba54d17d51f694e94bd49f_Dobra1.gif" width="100" height="100" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Sites</h4>
+                                    <p class="text-sm mb-0">Texto descritivo.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="https://multiplic.org/wp-content/uploads/2020/03/Home_IMG1.gif" width="100" height="100" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Projetos</h4>
+                                    <p class="text-sm mb-0">Texto descritivo.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="https://brforum.originalpw.com/uploads/monthly_2019_12/zim-2.gif.f82a11b7a480945116aa7c18770d19be.gif" width="80" height="80" alt="Feature 05">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Sobre min</h4>
+                                    <p class="text-sm mb-0">Texto descritivo.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="https://static.wixstatic.com/media/7481c7_70efd4bb3562447f9b025330ee41f759.gif" width="87" height="87" alt="Feature 06">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Linkedin</h4>
+                                    <p class="text-sm mb-0">Texto descritivo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Obrigado pela visita!</h2>
+                            <p class="section-paragraph mb-0">Caso queira deixa sua opnião ou sugestão será de grande vália!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="main.min.js"></script>
+</body>
+</html>
